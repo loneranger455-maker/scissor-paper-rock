@@ -1,0 +1,61 @@
+@keyframes pujan{
+    from{left:10px}
+    to {left:70px;}
+}
+#point1 ,#point2,#point3{
+    position: relative;
+    left :913px;
+    bottom: 160px;
+    border:2px groove black;
+    display: block;
+    width:50px;font-size: 20px;text-align: center;
+    height:30px;
+}
+#game ,#nogame{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center ;
+    align-content: space-around;
+    flex-direction: row;
+    border: 3px groove black;
+}
+#game >img , #nogame >img{
+    width: 300px;
+    margin:20px;
+    margin-left: 50px;
+    height: 200px;
+    object-fit: contain;
+}
+#game >img:hover{
+   box-shadow:5px 5px 10px black;
+   transform: scale(1.2,1.2);
+   
+}
+#new{
+    height: 30px;width: 30px;padding-left: 5px;
+    object-fit: contain;
+}
+.final{
+    height: 300px;width: 600px;
+    display: block;
+    font-size: 100px;
+    outline:10px groove red;
+    position: relative;
+    left:300px;
+    bottom:200px;
+}
+.final2{
+    position: absolute;
+    animation: pujan 5s;
+    bottom: 90px;
+    left:70px;
+}
+#float{
+    position: relative;
+    bottom: 270px;
+    left:500px;
+    background-color: blue;
+    border:5px outset black;
+    font-size: 50px;
+    text-decoration: none;
+}

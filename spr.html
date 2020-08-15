@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    
+    <title>Scissor Paper Rock</title>
+    <link rel="stylesheet" href="spr.css">
+    <script src="spr.js"></script>
+    <style>
+        table ,th ,td{
+            border:1px solid black;
+            margin:10px;
+        }
+        table{ height: 150px;width: 600px;position: relative;left: 300px;}
+    </style>
+</head>
+<body style="background-image:linear-gradient(to right,rgb(190, 46, 46),rgb(40, 40, 148));">
+    <div id="star">
+    <p style="font-family: Courier New; outline: 3px groove blue;text-align: center;font-size: 50px;margin: 0px;">Welcome to the Scissor Paper Rock Game
+    </p>
+    <h1 id="control" style="text-align: center;">Make your selection:</h1>
+    <hr>
+    <div id="mainone" onclick="refresh()"></div>
+    <div id="game">
+        <img onclick="main(0)" src="image/scissor.png">
+        <img onclick="main(1)" src="image/paper.png">
+        <img onclick="main(2)" src="image/rock.png">
+    </div>
+    <br><br></div>
+    <table>
+        <tr>
+            <td>******</td>
+            <th>1st</td>
+            <th>2nd</td>
+            <th>3rd</td>
+            <th>4th</td>
+            <th>5th</td>
+        </tr>
+        <tr id="player">
+            <td>Player</td>
+            
+        </tr>
+        
+  
+        <tr id=computer>
+            <td>computer</td>
+        </tr>
+        
+    </table>
+    <p id="point3">Total:</p>
+    <p id="point2">0</p>
+        <p id="point1">0</p>
+    
+
+</body>
